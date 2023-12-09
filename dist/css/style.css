@@ -24,14 +24,14 @@ body{
     background-color: black;
 }
 
-
+/* CSS Container */
 .container {
 
     width: 80%;
     margin-inline: auto;
     
 }
-
+/* Navbar CSS */
 .navbar {
     padding: 20px 0 20px 0;
     position: fixed;
@@ -87,12 +87,14 @@ body{
     color: #EE0864;
     
 }
+/* MenuBar CSS */
 .menubar {
     color: white;
     font-size: 24px;
     display: none;
 }
 
+/* Hero CSS */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -139,7 +141,7 @@ body{
     
 }
 
-
+/* Mediascreen 1000px */
 @media screen and (max-width: 1000px){
 
     .menubar{
@@ -166,7 +168,7 @@ body{
     }
 
     .navbar .box-navbar .menu.menu-active{
-        top: 80px;
+        top: 100px;
         opacity: 1;
         border-top: 1px solid white;
     }
@@ -191,6 +193,7 @@ body{
     }
 }
 
+/* Mediascreen 500px */
 @media screen and (max-width: 500px) {
 
   
@@ -279,6 +282,7 @@ body{
   }
 }
 
+/* Countdown CSS */
 .countdown{
   width: 100%;
   display: flex;
@@ -315,6 +319,7 @@ body{
   font-size: 30px;
 }
 
+/* Ticket CSS */
 .tiket {
   width: 100%;
   min-height: 50vh;
@@ -325,6 +330,7 @@ body{
   
 }
 
+/* ! Day Pass CSS */
 .div-2 {
   display: flex;
   flex-wrap: wrap;
@@ -345,17 +351,6 @@ body{
   flex-direction: column;
 }
 
-.div-3 {
-  border-radius: 23px;
-  border: 2px solid #ee0864;
-  display: flex;
-  width: 290px;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 33px;
-  padding-left: 20px;
-  flex-direction: column;
-}
 
 .div-4 {
   color: #fff;
@@ -415,18 +410,7 @@ body{
   text-wrap: nowrap;
 }
 
-.div-9 {
-  border-radius: 23px;
-  border: 2px solid #ee0864;
-  display: flex;
-  width: 290px;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 33px;
-  padding-left: 20px;
-  flex-direction: column;
-}
-
+/* 2 Day Pass Box */
 .div-10 {
   color: #fff;
   text-align: center;
@@ -485,18 +469,7 @@ body{
   text-wrap: nowrap;
 }
 
-.div-15 {
-  border-radius: 23px;
-  border: 2px solid #ee0864;
-  display: flex;
-  width: 290px;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 32px;
-  padding-left: 20px;
-  flex-direction: column;
-}
-
+/* Bundle Ticket CSS */
 .div-16 {
   color: #fff;
   text-align: center;
@@ -555,6 +528,7 @@ body{
   text-wrap: nowrap;
 }
 
+/* Line Gap CSS */
 .line{
     display: flex;
     width: 100%;
@@ -568,6 +542,7 @@ body{
   margin: 50px;
 }
 
+/* Registration CSS */
 .regis {
   width: 100%;
   min-height: 50vh;
@@ -598,6 +573,7 @@ body{
 
 }
 
+/* Corporate CSS */
 .div-r4 {
   color: white;
   text-align: center;
@@ -631,6 +607,7 @@ body{
   text-wrap: nowrap;
 }
 
+/* Circle CSS */
 .div-r10 {
   color: white;
   text-align: center;
@@ -654,6 +631,7 @@ body{
 
 }
 
+/* Registration Button */
 button{
   justify-content: center;
     align-items: center;
@@ -667,10 +645,12 @@ button{
     background-color: #fff;
 }
 
+/* Text "O" change red */
 .oredregis{
   color: #EE0864;
 }
 
+/* Information CSS */
 .maininfo {
   width: 100%;
   min-height: 50vh;
@@ -701,6 +681,7 @@ button{
   flex-direction: column;
 }
 
+/* Address CSS */
 .img {
   object-fit: cover;
   object-position: center;
@@ -708,6 +689,7 @@ button{
   align-self: center;
   margin-left: 1px;
 }
+
 .main-4 {
   color: #fff;
   text-align: center;
@@ -738,12 +720,14 @@ button{
   margin-left: -3px;
 }
 
+/* Date CSS */
 .img-2 {
   object-fit: cover;
   object-position: center;
   width: 40px;
   align-self: center;
 }
+
 .main-8 {
   color: #fff;
   text-align: center;
@@ -773,6 +757,7 @@ button{
   text-wrap: nowrap;
 }
 
+/* Phone No CSS */
 .img-3 {
   object-fit: cover;
   object-position: center;
@@ -812,6 +797,7 @@ button{
   text-wrap: nowrap;
 }
 
+/* Previous CSS */
 .eventpicture {
   width: 100%;
   min-height: 50vh;
@@ -829,12 +815,14 @@ button{
   column-gap: 100px;
 }
 
+/* Image size */
 .eventpicture .subimg .image img{
   width: 500px;
   height: 350px;
   
 }
 
+/* Youtube CSS */
 .youtubecontent {
   width: 100%;
   min-height: 50vh;
@@ -852,10 +840,13 @@ button{
   column-gap: 100px;
 }
 
+/* Video Size */
 .youtubecontent .subcontent .video {
   width: 500px;
   height: 350px;
 }
+
+/* Contact Us CSS */
 .forminput{
   width: 100%;
   min-height: 50vh;
@@ -865,6 +856,7 @@ button{
   justify-content: center;
 
 }
+
 form {
   width: 90%;
   max-width: 1000px;
@@ -926,6 +918,7 @@ textarea:valid~label{
 
 }
 
+/* About us CSS */
 .aboutmain {
   width: 100%;
   min-height: 50vh;
@@ -977,6 +970,7 @@ textarea:valid~label{
   background-color: #fff;
 }
 
+/* Footer */
 footer{
   
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../asset/img/banner.jpg");
