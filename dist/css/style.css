@@ -265,7 +265,17 @@ body{
   
   }
 
-  .row {
+  .aboutmain {
+    margin-left: 50px;
+  }
+  
+  .text1 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    align-self: center;
+    text-wrap: wrap;
   }
 }
 
