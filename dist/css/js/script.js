@@ -1,3 +1,4 @@
+// Menu Bar animation
 const menuBar = document.querySelector(".menu-bar");
 const menuNav = document.querySelector(".menu");
 
@@ -14,6 +15,7 @@ window.addEventListener("scroll", () => {
     menuBar.classList.remove("menu-active");
 });
 
+// Countdown Animation
 var countDownData= new Date("Dec 16, 2023 00:00:00").getTime();
 var x  = setInterval(function(){
     var now = new Date().getTime();
