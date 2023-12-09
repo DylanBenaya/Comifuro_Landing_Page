@@ -8,13 +8,12 @@
 }
 
 header {
-    background-image: url("../../asset/img/banner.jpg");
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url('../../asset/img/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-attachment: scroll;
-
-    
 }
 
 body{
@@ -134,13 +133,6 @@ body{
     
 }
 
-main {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 @media screen and (max-width: 1000px){
 
@@ -191,19 +183,82 @@ main {
         font-size: 100px;
         
     }
+}
 
-    .youtubecontent .subcontent .video {
-      max-width: 80%;
-    }
+@media screen and (max-width: 500px) {
+  
+  header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url('../../asset/img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-attachment: scroll;
+    width: 600px;
+  }
 
-    .subimg {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      row-gap: 50px;
-      column-gap: 100px;
-    }
+  footer {
+    width: 600px;
+  }
+
+  .footerContainer{
+    width: max-content;
+  }
+
+  body {
+    width: 500px;
+  }
+
+  .subtext {
+    width: 500px;
+  }
+
+  .subtext h1 {
     
+    padding-left: 110px;
+  }
+
+  .tiket {
+    margin-left: 55px;
+  }
+
+  .line {
+    margin-left: 55px;
+  }
+
+  
+  
+  .div-r2 {
+    padding-left: 100px;
+  }
+
+  .maininfo {
+    margin-left: 52px;
+  }
+
+  .subimg {
+    margin-left: 100px;
+  }
+  
+  .eventpicture .subimg .image img{
+    padding: 30px;
+  }
+  
+  .subcontent {
+   margin-left: 100px;
+  }
+  
+  .youtubecontent .subcontent .video {
+    padding: 30px;
+  }
+
+  .forminput{
+    margin-left: 50px;
+  
+  }
+
+  .row {
+  }
 }
 
 .countdown{
@@ -573,7 +628,7 @@ main {
 .div-r11 {
   color: #fff;
   text-align: center;
-  font-size: 55px;
+  font-size: 49px;
   font-weight: 500;
   align-self: center;
   text-wrap: nowrap;
@@ -619,7 +674,8 @@ button{
   border-radius: 23px;
   border: 2px solid #EE0864;
   display: flex;
-  width: auto;
+  width: 350px;
+  height: 300px;
   padding-top: 40px;
   padding-right: 20px;
   padding-bottom: 40px;
@@ -630,14 +686,14 @@ button{
 .img {
   object-fit: cover;
   object-position: center;
-  width: 41px;
+  width: 35px;
   align-self: center;
   margin-left: 1px;
 }
 .main-4 {
   color: #fff;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   align-self: center;
   margin-top: 18px;
@@ -656,7 +712,7 @@ button{
 .main-6 {
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   max-width: 326px;
   align-self: center;
@@ -667,13 +723,13 @@ button{
 .img-2 {
   object-fit: cover;
   object-position: center;
-  width: 53px;
+  width: 40px;
   align-self: center;
 }
 .main-8 {
   color: #fff;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   align-self: center;
   margin-top: 18px;
@@ -691,7 +747,7 @@ button{
 .main-10 {
   color: #fff;
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   align-self: center;
   margin-top: 25px;
@@ -709,7 +765,7 @@ button{
 .main-12 {
   color: #fff;
   text-align: center;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
   align-self: center;
   margin-top: 18px;
@@ -750,7 +806,7 @@ button{
 .subimg {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   row-gap: 50px;
   column-gap: 100px;
 }
@@ -819,6 +875,7 @@ label{
   color: #fff;
   cursor: text;
   transition: 0.2s;
+  
 }
 
 button{
@@ -890,23 +947,33 @@ footer{
   margin: 30px 0;
 }
 
-.footerNav ul{
-  display: flex;
-  justify-content: center;
-}
-
-.footerNav ul li a{
-  color: white;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.3em;
-  opacity: 0.9;
-  transition: 0.5s;
-}
-
 .footerNav ul li a:hover{
   opacity: 1;
   color: #EE0864;
+}
+
+.footerContainer .footerNav {
+  display: flex;
+  column-gap: 20px;
+  font-size: 14px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footerContainer .footerNav ul {
+  display: flex;
+}
+
+.footerContainer .footerNav li {
+  list-style-type: none;
+}
+
+.footerContainer .footerNav li a {
+  text-decoration: none;
+  color: white;
+  padding-inline: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .footerBottom{
